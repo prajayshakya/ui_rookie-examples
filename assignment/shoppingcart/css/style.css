@@ -1,0 +1,74 @@
+.style
+{
+    background-color: #60cff5;
+    font-family: sans-serif;
+    color: whitesmoke;
+    font-size: "80";
+    padding:1em;
+    margin:1em;
+}
+
+.form_style
+{
+    font-family: sans-serif;
+    padding:1em;
+    margin:1em;
+}
+
+.error
+{
+    font-size:smaller;
+    color:red;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: Arial;
+}
+<!-------homepage----------->
+#container{
+    background-color: white;
+    width:1800px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+#header{
+    background-color: dodgerblue;
+    color:white;
+    text-align: center;
+}
+
+#content{
+    padding: 10px;   
+}
+
+#nav
+{
+    width:180px;
+    height: 500px;
+    float:left;
+    padding: 10px;
+}
+
+a{
+    text-decoration-color: skyblue;
+}
+
+
+
+#main{
+    width:580px;
+    height: 500px;
+    float:right;
+        
+}
+
+#footer{
+    clear:both;
+    padding:10px;
+    color:gray;
+    background-color: bisque
+}
+

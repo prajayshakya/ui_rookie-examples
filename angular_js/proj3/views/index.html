@@ -1,0 +1,30 @@
+<! doctype html >
+<html>
+    <head>
+        <title> sample with bg-view</title>
+    </head>
+    <body ng-app = "sampleView">
+        <h1> Sample with ng-view </h1>
+        
+            <nav>
+        <ul>
+            <li><a href='#!/home'>Home</a></li>
+            <li><a href='#!/error'>Error</a></li>
+        </ul>
+            </nav>
+        
+<!--
+        <div ng-controller = "sampleViewCtrl">
+            {{ home.title }}
+-->
+        <div ng-view></div>
+<!--        </div>-->
+        
+        
+    </body>
+    <script type = 'text/javascript' src='/node_modules/angular/angular.js'></script>
+    <script type='text/javascript' src='/node_modules/angular-route/angular-route.js'></script>
+    <script type='text/javascript' src='/js/services/sampleView.js'></script>
+    <script type='text/javascript' src='/js/controller/sampleViewCtrl.js'></script>
+    <script type='text/javascript' src='/js/controller/homeCtrl.js'></script>
+</html>

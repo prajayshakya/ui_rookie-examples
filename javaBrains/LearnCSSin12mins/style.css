@@ -1,0 +1,49 @@
+body{
+    background-color: aliceblue;
+    font-family: Arial;
+}
+
+#container{
+    background-color: white;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+#header{
+    background-color: dodgerblue;
+    color:white;
+    text-align: center;
+}
+
+#content{
+    padding: 10px;   
+}
+
+#nav
+{
+    width:180px;
+    float:left;
+    padding: 10px;
+}
+
+a{
+    text-decoration-color: skyblue;
+}
+
+
+
+#main{
+    width:580px;
+    float:right;
+        
+}
+
+#footer{
+    clear:both;
+    padding:10px;
+    color:gray;
+    background-color: bisque
+}
+

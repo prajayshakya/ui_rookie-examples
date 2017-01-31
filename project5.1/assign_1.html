@@ -1,0 +1,135 @@
+<! doctype html >
+<html>
+    <head>
+        <title> Assignment 1 </title>
+        <h3> Assignment 1 </h3>
+    </head>
+    
+    <style>
+    </style>
+    <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.css" >
+    
+    <body>
+        <form name = "form" method = "post">
+        <table class = "table table-hover">
+        
+            <tr>
+                <td> First name: 
+                <input type = "text" name = "firstname" placeholder = "Enter firstName"> </td>
+            </tr>
+            
+            <tr>
+                <td> Last name: 
+                <input type = "text" name = "lastname" placeholder="Enter lastname" > </td> 
+            </tr>
+            
+            <tr>
+                <td> Gender 
+                <input type = "radio" name = "gender" value = "male"> Male
+                <input type = "radio" name = "gender" value = "female"> Female
+                <input type = "radio" name = "gender" value = "others"> Others
+                </td>
+            </tr>
+            
+            <tr>
+                <td> Country 
+                
+                <select name = "countries"> 
+                <option values = " "> Select Countries</option>
+                <option values = "bra"> Brazil </option> 
+                <option values = "Ger"> Germany </option>  
+                <option values = "New"> Newzealand </option>
+                <option values = "thai"> Thailand </option> 
+                </select>
+                
+                </td>
+            </tr>
+            
+            
+            
+            <tr>
+                <td> Class Taken 
+                
+                <input type = "checkbox" name = "class" value = "Java" > Java
+                <input type = "checkbox" name = "class" value = "C#" > C#
+                <input type = "checkbox" name = "class" value = "UI" > UI
+                <input type = "checkbox" name = "class" value = "Vmware" > VmWare
+                </td>
+            </tr>
+        
+            <tr>
+            <td>
+            <input type = "submit" value = "submit">
+            </td>
+            </tr>
+                
+        </table>
+        </form>
+
+<hr> <!-- working on tables with div via http://getbootstrap.com/css/ -->
+    
+    <h4><u><em> Assignment1 Using Grids </em></u></h4>
+        <form name = "Another_form" method = "post">
+        
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "col-md-2"> First name: </div>
+                    <div class = "col-md-1"> 
+                    <input type = "text" name = "firstname" placeholder = "Enter firstName"> </div>
+            </div>
+            
+            <div class = "row">
+                <div class = "col-md-2"> Last name: </div>
+                <div class = "col-md-4">
+                  <input type = "text" name = "lastname" placeholder="Enter lastname" > 
+                </div> 
+            </div>
+            
+            <div class = "row">
+                <div class = "col-md-2"> Gender </div>
+                <div class = "col-sm-3">
+                <input type = "radio" name = "gender" value = "male"> Male
+                <input type = "radio" name = "gender" value = "female"> Female
+                <input type = "radio" name = "gender" value = "others"> Others
+                </div>
+            </div>
+            
+            <div class = "row">
+                <div class = "col-md-2"> Country </div>
+                
+                <div class = "col-md-3">
+                <select name = "countries"> 
+                <option values = " "> Select Countries</option>
+                <option values = "bra"> Brazil </option> 
+                <option values = "Ger"> Germany </option>  
+                <option values = "New"> Newzealand </option>
+                <option values = "thai"> Thailand </option> 
+                </select>
+                
+                </div>
+            </div>
+            
+            
+            
+            <div class = "row">
+                <div class = "col-md-2"> Class Taken </div>
+                <div class = "col-sm-5">
+                <input type = "checkbox" name = "class" value = "Java" > Java
+                <input type = "checkbox" name = "class" value = "C#" > C#
+                <input type = "checkbox" name = "class" value = "UI" > UI
+                <input type = "checkbox" name = "class" value = "Vmware" > VmWare
+                </div>
+            </div>
+        
+            <div class = "row">
+                <div class = "col-md-2"> </div>
+                <div class = col-sm-5>
+            <input type = "submit" value = "submit"> 
+                </div>
+            </div>
+                
+        </div>
+        </form>
+    </body>
+
+</html>

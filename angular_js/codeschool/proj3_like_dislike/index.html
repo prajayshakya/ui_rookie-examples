@@ -1,0 +1,32 @@
+<html ng-app="myModule">
+    <body>
+        <div>
+            Hide Dislike<input type = "checkbox" ng-model="hideDetails">
+          
+            <div ng-controller="myController"> 
+                <table>
+                    <tr>
+                        <th> Actress </th>
+                        <th> Likes </th>
+                        <th ng-hide="hideDetails"> Dislikes </th>
+                        <th ng-show="hideDetails"> Dislikes </th>
+                    </tr>
+                    <tr ng-repeat = "model in models | orderBy: 'name' ">
+                        <td> {{ model.name | uppercase }}</td>
+                        <td> {{ model.likes }}</td>
+                        <td ng-hide="hideDetails"> {{ model.dislikes }}</td>
+                        <td ng-show="hideDetails">  ** </td>
+                        
+                        <td>
+                        <input type = 'button' value = 'likes'ng-click="incrementlikes(model)">
+                        <input type = 'button' value='dislike' ng-click="dicrementlikes(model)" ng-hide="hideDetails">
+                        </td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script type='text/javascript' src='/angular_js/node_modules/angular/angular.js'></script>
+    <script type='text/javascript' src="/angular_js/codeschool/proj3/likedislike.js"></script>
+</html>

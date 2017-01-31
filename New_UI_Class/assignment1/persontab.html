@@ -1,0 +1,109 @@
+<html>
+<style>
+    .error-msg{
+        color:red;
+    }
+</style>    
+    <head>
+        <title> Contact Information</title>
+    </head>
+    <body>
+        <div id="tabs">
+  <ul>
+    <li><a href="#formTab">Form</a></li>
+    <li><a href="#resultTab">Result</a></li>
+  </ul>
+  <div id="formTab">
+    <form class = "container" name="contactinfo" method="post">
+                    <div class = "row">
+                    <div> <h2>Contact Information</h2> </div>
+                    <div class = "col-md-2">
+                        First Name
+                     </div>
+                    <div class = "col-md-2">    
+                        <input type="text" name="firstName" id = "fName" placeholder="Enter Firstname">
+                    </div>
+                   
+                        <div class="col-md-2">
+                            <span class = "error-msg" id = "fnameErr">
+                                invlaid firstname
+                            </span>
+                        </div>
+                     </div> 
+        
+                    <div class = "row">
+                    <div class = "col-md-2">
+                        Last Name
+                    </div>    
+                    <div class = "col-md-2">
+                        <input type="text" name="lastName" id = "lName" placeholder="Enter Lastname">
+                    </div>    
+                        <div class="col-md-2">
+                            <span class = "error-msg" id = "lnameErr">
+                                invalid lastname
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class = "row">
+                    <div class = "col-md-2">
+                        D.O.B
+                    </div>
+                    <div class = "col-md-2">
+                        <input type="date" name="dob" id = "dob">
+                    </div>  
+                        <div class="col-md-2">
+                            <span class = "error-msg" id = "dobErr">
+                                invalid dob
+                            </span>
+                        </div>
+                 
+                    </div>
+
+                
+        </form>
+      <button  id = "submit" > submit</button>
+      <button id="validate"> validate </button>
+  </div>
+            
+  <div id="resultTab">
+      <div id="accordion">
+          <div> <h3>
+    <div id = "results">
+    </div>
+        </h3></div>
+      </div>
+  </div>
+  
+</div>
+ 
+        
+    </body>
+        <h1 id = "sample"> this is a sample for hide and show </h1>
+        <button id = "sampleBtn" class = "btn btn primary"> Toggle hide/show </button>
+    
+    
+    <!--Dialogs container below here -->
+    <div class="dialog" title="Basic dialog">
+        <p><span id="errorCount"></span> error found. Please fix it!</p>
+    </div>
+    
+   
+    <div class="formDialog" title="Sample form">
+        <form>
+            FirstName: <input type = 'text' name = "fName"><br>
+            LastName: <input type = 'text' name = "lName"><br>
+        </form>
+    </div>
+    
+    <button id = "openForm" >openform</button>
+      <!--it call a function which is in person.js, so if you keep it below person.js, you will get an error -->
+    <script type = "text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery-ui/jquery-ui.js"></script>
+    <script type = "text/javascript" src="/person.js"></script>
+   
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/jquery-ui/jquery-ui.css">
+    
+    
+</html>

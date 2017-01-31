@@ -1,0 +1,35 @@
+<html>
+    
+    <body>
+    <h3> passing function as a parameter and function as an object</h3>
+        <script>
+        /*var result = function(name)
+        {
+            console.log("hello from result"+name);
+        }
+        
+        var result1= function(fn, name)
+        {
+            fn(name);
+        }
+            
+            result1(result, "prakash");*/
+            
+            //passing function via parameter
+            
+            myObj = {
+                "prop": "hello" 
+            };
+            
+            myObj.result = function f1()
+            {
+                console.log("hello function");
+            }
+            
+            console.log(myObj);
+            
+            myObj.result();
+       
+        </script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<title>angular project 1</title>
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+	</head>
+    <!--Declaring angular application-->
+	<body ng-app="appName">
+		<h1>Learning scope variables</h1>
+        
+            <div ng-controller="appCtrl">
+                <h1>From app Ctrl</h1>
+                
+                Two way data binding {{header}}<br>
+                One way data binding {{::header}}<br>
+                <sample-header></sample-header>
+                <button class="btn btn-primary" ng-click="test()">change header</button>
+            
+            </div>
+        
+    
+        
+        <!--FOR PERSON FORM-->
+        <div ng-controller="personCtrl">
+            <h1>From Person Ctrl</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="text" ng-model="personModel.firstName" placeholder="Enter First Name">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" ng-model="personModel.lastName" placeholder="Enter Last Name">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" ng-model="personModel.address" placeholder="Enter address">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" ng-model="personModel.phoneNumber"
+                               placeholder="Enter phone number">
+                    </div>
+                </div>
+                <!--Contents below are for displaying purpose-->
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>First Name</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Last Name</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Address</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Phone Number</label>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        {{personModel.firstName}}
+                    </div>
+                    <div class="col-md-2">
+                        {{personModel.lastName}}
+                    </div>
+                    <div class="col-md-2">
+                        {{personModel.address}}
+                    </div>
+                    <div class="col-md-2">
+                        {{personModel.phoneNumber}}
+                    </div>
+                </div>
+            </div>
+            
+            <div ng-show="forNgShow">
+                This content is for testing ng show
+            </div>
+            
+            <div ng-if="forNgIf">
+                This content is for testing ng if
+            </div>
+            <button ng-click="toggleForShow()" class="btn btn-warning">NG-SHOW TOGGLE</button>
+            <button ng-click="toggleForIf()" class="btn btn-danger">NG-if TOGGLE</button>
+        </div>
+        
+        <div class="container"> 
+            <h1>Learning directives</h1>
+                As Element <sample-header></sample-header><br>
+<!--
+                As Attribute <div sample-header></div><br>
+                As Class <div class="sample-header"></div>
+-->
+        </div>
+<!--        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>-->
+        <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+        <script type="text/javascript" src="/js/app.js"></script>
+        <script type="text/javascript" src="/js/controllers/appCtrl.js"></script>
+        <script type="text/javascript" src="/js/directives/firstDirective.js"></script>
+        <script type="text/javascript" src="/js/controllers/personCtrl.js"></script>
+	</body>
+</html>

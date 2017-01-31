@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title> Contact Information</title>
+    </head>
+    <body>
+        <div class= container>
+        <form name="contactinfo" method="post">
+                <div class = "row">
+                    <div> <h2>Contact Information</h2> </div>
+                    <div class = "col-md-4">
+                        First Name
+                    </div>
+                    <div>
+                        <input type="text" name="firstName" id = "fName" placeholder="Enter Firstname">
+                    </div>
+                    
+                    <div class = "col-md-4">
+                        Last Name
+                    </div>
+                    <div>
+                        <input type="text" name="lastName" id = "lName" placeholder="Enter Lastname">
+                    </div>
+                    
+                    <div class = "col-md-4">
+                        Date:
+                    </div>
+                    <div>
+                        <input type="date" name="date" id = "date">
+                    </div>
+
+                </div>  
+        </form>
+            
+            
+        </div>
+        <div>
+<!--
+        <button  id = "submit" onclick="submit()" > submit</button>
+        <button  id = "display" onclick="display()">display</button>
+-->
+        <button  id = "submit" > submit</button>
+        <button  id = "display" >display</button>
+        <button id = "test"> Test </button>     
+        </div>    
+        <div id = "results">
+           <h3>this is the place where display is happening</h3>
+        </div>
+        
+    </body>
+    
+     
+      <!--it call a function which is in person.js, so if you keep it below person.js, you will get an error -->
+    <script type = "text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery-ui/jquery-ui.js"></script>
+    <script type = "text/javascript" src="/person.js"></script>
+   
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/jquery-ui/jquery-ui.css">
+    
+    
+</html>

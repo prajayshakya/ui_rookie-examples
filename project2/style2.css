@@ -1,0 +1,19 @@
+#orderedlist{ 
+background-color:#e896e8;
+	padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+margin:50px;
+border: 5px solid #9C27B0;
+			}
+
+#unorderedlist{ 
+background-color: #e08a8a;
+	padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+margin:50px;
+border: 5px solid #FF5722;
+}

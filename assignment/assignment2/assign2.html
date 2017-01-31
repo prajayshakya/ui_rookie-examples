@@ -1,0 +1,142 @@
+<! doctype html>
+<html>
+    <head>
+        <title> Cubic </title>
+    </head>
+    
+    
+    <body>
+    
+    <form name= 'form' method='post'>
+    <table class = "table table-hover">
+        
+        <tr>
+            <td colspan ='2' bgcolor="white" align = 'center'>
+                <input type = 'image' src = "/assignment/assignment2/WhaDnTb7.png" height="42" width="42">
+               <b> Cubic Student Information  </b></td>
+        </tr>
+        <tr class="bg-success">
+            <th ><label id = 'lbl_f_name' > First Name </label> </th>
+            <td> <input type = "text" name = "firstname" id= 'f_name' placeholder="Enter First Name"> 
+            <span id = "F_nameError"> </span>
+            </td>
+        </tr>
+        
+        <tr class="styling">
+            <th> <label id = 'lbl_l_name'>Last Name</label></th>
+            <td> <input type = "text" name = "lastname" id = 'l_name' placeholder="Enter Last Name">
+            <span id = "l_nameError"> </span>
+            </td>
+        </tr>
+        
+        <tr class="bg-success">
+                <th><label id='lbl_gender'> Gender </label></th>
+                <td>
+                <input type = "radio" name = "gender" value = "male"> Male
+                <input type = "radio" name = "gender" value = "female"> Female
+                <input type = "radio" name = "gender" value = "others"> Others
+                <span id = "gender_Error"> </span>
+                </td>
+        </tr>
+        
+        <tr >
+            <th class="styling" colspan='2' align = 'center'><label>Physical Adress </label></th>
+        </tr>
+        <tr class="bg-success">
+            <td > <label id = 'lbl_address'>Address1</label></td>
+            <td><input type = "text" name = "address" id = 'address' placeholder="Enter street name"> 
+            <span id = "address_Error"> </span>
+            </td>
+        </tr>
+        
+        
+        <tr class="styling">
+        <td><label id ='lbl_city'> City </label></td>
+        <td> <input type = "text" name = "city" id = 'city' placeholder="Enter city"> 
+        <span id = "city_Error"> </span>
+        </td>
+        </tr>
+        
+        <tr class="bg-success">
+            <td><label id='lbl_state'> State</label></td>
+            <td> <select name = "state" id = 'state'> 
+                <option values = " "> </option>
+                <option values = "bra"> TX</option> 
+                <option values = "Ger"> MD</option>  
+                <option values = "New"> MN</option>
+                <option values = "thai"> ND</option> 
+                </select>
+            <span id = "state_Error"> </span>
+            </td>
+        </tr>
+        
+         <tr class="styling">
+             <td><label id= 'lbl_countries'> Country </label></td> 
+                <td>
+                <select name = "countries" id = 'countries'> 
+                <option values = " "> </option>
+                <option values = "bra"> USA </option> 
+                <option values = "bra"> Brazil </option> 
+                <option values = "Ger"> Germany </option>  
+                <option values = "New"> Newzealand </option>
+                <option values = "thai"> Thailand </option> 
+                </select>
+            <span id = "countries_Error"> </span>
+                </td>
+        </tr>
+        
+        <tr class="bg-success"> 
+            <th> <label id = 'lbl_contact'> Contact no </label></th>
+            <td><input type = "text" name = "contact" id = 'contact' placeholder="(xxx)-xxx-xxx">
+          <span id = "contact_Error"> </span>  
+            </td>
+        </tr>
+
+        
+        
+    </table>
+            <tr>
+            <td>
+            <button type = 'button' class = "btn btn-warning"  id = "submit" onclick = 'addperson(event)'> Submit </button>
+            </td>
+            </tr>
+            
+            <td>
+                <button type = 'button' class= "btn btn-success" id=display onclick = 'displayperson(event)'> Display </button></td>
+            
+            
+    </form>
+         
+        
+            <div id = "d1" align = 'center'> </div>
+            <tr>
+                <button id = 'btn1'> button1 </button>
+            </tr>
+            
+        <hr>
+            <div id ='first'> first contents</div>
+            <div id = 'second'> second contents </div>
+            
+            <button id = 'firstbtn'> display first </button>
+            <button id = 'secondbtn'> display Second </button>
+            
+            <button id = 'thirdbtn'> DisplayAll</button>
+        <hr>
+            <button id='btn4'> Add_class </button>
+        <tr>
+            <button id ='btn5'> Remove_class</button>
+         </tr>   
+            
+        
+    </body>  
+        <script type="text/javascript" src="/assignment/assignment2/node_modules/jquery/dist/jquery.js"></script>
+        
+        <script type = "text/javascript" src ='/assignment/assignment2/assign2.js' ></script> 
+        
+        <link rel ="stylesheet"     href="/assignment/assignment2/node_modules/bootstrap/dist/css/bootstrap.css">
+        
+        <script type = "text/javascript" src = "/assignment/assignment2/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        
+        <link rel = "stylesheet" href="/assignment/assignment2/style.css">
+    
+</html>

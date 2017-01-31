@@ -1,0 +1,18 @@
+<html ng-app="myModule">
+    <body>
+        <div ng-controller = "myController">
+            <div>
+        <select ng-model="selectType">
+            Select view:
+            <option value="view1.html"> order</option>
+            <option value="view2.html"> unorder</option>
+        </select>
+            </div >
+        <div ng-include = "selectType"></div>
+        </div>    
+        
+    </body>
+    <script type = 'text/javascript' src='/angular_js/node_modules/angular/angular.js'></script>
+    <script type = 'text/javascript' src='/angular_js/codeschool/proj4_multipleHtml_dir/view.js'></script>
+    
+</html>

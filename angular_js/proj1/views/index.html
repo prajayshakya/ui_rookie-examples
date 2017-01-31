@@ -1,0 +1,53 @@
+<! doctype html>
+<html>
+    <link rel='stylesheet' href='/css/style.css'>
+
+    <head>
+        <title> angular proj1 </title>
+    </head>
+    <body ng-app = 'app'> <!-- tells compiler that it is an angular app -->
+        
+        
+        <div ng-controller = 'AppCtrl'>
+            
+            
+            <input type = 'text' ng-model='person.name' id='name'>
+            <br>
+            {{ person.name }} <!--in this change is instant -->
+            <br><p>one way binding is below</p><hr> 
+            {{:: person.name }} <!--for this we have to go back and make changes in .js file -->
+            
+
+            
+            <nav-bar></nav-bar>
+
+            
+       
+        <!-- we can use either 3 ways to show the template -->
+        <div app-title></div>
+<!--        <div class = 'app-title'></div>-->
+        <app-title> </app-title>
+        
+        {{ title }}
+        
+         </div>
+        
+<!--        using http controller-->
+        <div ng-controller = "ShopCtrl">
+        <h2>this is a part from http shopping yo!</h2>
+        </div>
+        
+        <script type='text/javascript' src='/node_modules/angular/angular.js'>
+        </script>
+        
+        <script type = 'text/javascript' src = "/js/proj1.js">
+        </script>
+        <script type = 'text/javascript' src='/js/controllers/AppCtrl.js'>
+        </script>
+        <script type='text/javascript' src='/js/controllers/ShopCtrl.js'></script>
+        <script type = "text/javascript" src='/js/directives/title.js'></script>
+        <script type = "text/javascript" src='/js/directives/left_nav.js'></script>
+        <script type="text/javascript" src='/js/services/service.js'></script>
+    </body >
+    
+</html>
